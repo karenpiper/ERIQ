@@ -1,4 +1,4 @@
 {
-  "buildCommand": "npm run build -w shared && npm run build --workspace=client",
+  "buildCommand": "npm run build:vercel",
   "outputDirectory": "client/dist"
 }
