@@ -1,0 +1,40 @@
+.page-home h1 { margin-bottom: 0.5rem; }
+.tagline {
+  color: var(--color-text-muted);
+  font-size: 1.0625rem;
+  margin-bottom: 1.5rem;
+  max-width: 52ch;
+}
+
+.btn { padding: 0.6rem 1.25rem; border-radius: var(--radius); font-weight: 500; border: none; display: inline-block; }
+.btn-primary { background: var(--color-accent); color: white; text-decoration: none; }
+.btn-primary:hover { filter: brightness(1.05); }
+
+.project-list { margin-top: 2rem; }
+.project-list h2 { font-size: 1.125rem; margin-bottom: 0.75rem; }
+.project-list ul { list-style: none; padding: 0; margin: 0; }
+.project-list li { margin-bottom: 0.5rem; }
+.project-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  color: var(--color-text);
+  text-decoration: none;
+}
+.project-list a:hover { border-color: var(--color-accent); background: var(--color-accent-soft); }
+.project-list .name { font-weight: 500; }
+.project-list .score {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9375rem;
+}
+.project-list .score[data-band="deep"] { background: #ccfbf1; color: #0f766e; }
+.project-list .score[data-band="strong"] { background: #ede9fe; color: #5b21b6; }
+.project-list .score[data-band="moderate"] { background: #fef9c3; color: #854d0e; }
+.project-list .score[data-band="low"] { background: #fee2e2; color: #b91c1c; }
